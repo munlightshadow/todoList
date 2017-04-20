@@ -19,7 +19,7 @@ import {Todo} from './todo';
         </div>
         <div>
         In list {{currentTodo.count}} items. Incomplete {{currentTodo.incomplete}}
-        <div>
+        </div>
         <table> 
           <tr *ngFor="#todo of currentTodo.todos; #i=index">
             <td><input type="checkbox" [(ngModel)]="todo.completed" (click)="currentTodo.selectedTodo(i)" /></td>
